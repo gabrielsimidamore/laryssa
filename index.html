@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-anim="on">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laryssa Nail Spa — Nail Design em Osasco</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav hero-dark" id="nav">
+  <a class="brand-mark" href="#inicio" aria-label="Laryssa Nail Spa — início">
+    <span class="brand-mono">L</span>
+    <span class="brand-name">
+      <b>Laryssa</b>
+      <span>Nail Spa · Osasco</span>
+    </span>
+  </a>
+  <div class="nav-links">
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#contato">Localização</a>
+  </div>
+  <a class="btn btn-gold nav-cta" href="https://wa.me/553899768680?text=Ol%C3%A1%20Laryssa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.519 5.26l-.999 3.648 3.97-.607zm5.422-6.962c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    Agendar
+  </a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <a href="#sobre" class="mn-link">Sobre</a>
+  <a href="#servicos" class="mn-link">Serviços</a>
+  <a href="#galeria" class="mn-link">Galeria</a>
+  <a href="#depoimentos" class="mn-link">Depoimentos</a>
+  <a href="#contato" class="mn-link">Localização</a>
+  <a class="btn btn-gold mn-cta" href="https://wa.me/553899768680?text=Ol%C3%A1%20Laryssa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+</div>
+
+<!-- ===== HERO (unified markup — layout switches via data-hero) ===== -->
+<header class="hero" data-hero="editorial" id="inicio">
+  <div class="hero-photo"><img src="assets/laryssa-esmalte.png" alt="Laryssa segurando um esmalte"></div>
+  <div class="frame-rule"></div>
+  <svg class="filigree" style="top:30px; left:30px;" viewBox="0 0 180 180" aria-hidden="true"><path d="M2 60 C2 26 26 2 60 2 M2 60 C2 90 30 100 60 100 M30 60 C30 44 44 30 60 30"/></svg>
+  <svg class="filigree" style="bottom:30px; right:30px; transform:rotate(180deg);" viewBox="0 0 180 180" aria-hidden="true"><path d="M2 60 C2 26 26 2 60 2 M2 60 C2 90 30 100 60 100 M30 60 C30 44 44 30 60 30"/></svg>
+
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow" data-reveal>Nail Design · Osasco — SP</span>
+      <h1 class="hero-title serif" data-reveal data-delay="1">Unhas que<br><em>traduzem</em> a sua<br>elegância</h1>
+      <p class="lead" data-reveal data-delay="2">No Laryssa Nail Spa cada detalhe é pensado para você: técnica precisa, materiais premium e um espaço acolhedor para cuidar das suas mãos com carinho.</p>
+      <div class="hero-cta-row" data-reveal data-delay="3">
+        <a class="btn btn-gold" href="https://wa.me/553899768680?text=Ol%C3%A1%20Laryssa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.519 5.26l-.999 3.648 3.97-.607zm5.422-6.962c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Agendar pelo WhatsApp
+        </a>
+        <a class="btn btn-outline" href="#galeria">Ver trabalhos</a>
+      </div>
+      <div class="hero-meta" data-reveal data-delay="4">
+        <div class="mi"><b>+500</b><span>Clientes felizes</span></div>
+        <div class="mi"><b>4 anos</b><span>de experiência</span></div>
+        <div class="mi"><b>5,0★</b><span>Avaliação</span></div>
+      </div>
+    </div>
+
+    <div class="hero-figure">
+      <img src="assets/laryssa-retrato.jpeg" alt="Laryssa, nail designer">
+    </div>
+  </div>
+
+  <a class="scroll-cue" href="#sobre" aria-label="Rolar para baixo">
+    <span>Conheça</span>
+    <span class="line"></span>
+  </a>
+</header>
+
+<!-- ===== SOBRE ===== -->
+<section class="sobre section-pad" id="sobre">
+  <div class="wrap sobre-grid">
+    <div class="sobre-figure" data-reveal>
+      <div class="gold-frame"></div>
+      <div class="ph"><img src="assets/laryssa-rosa.png" alt="Laryssa, nail designer" style="object-position: 50% 18%;"></div>
+      <div class="tag">
+        <b>L · N · S</b>
+        <span>Laryssa Nail Spa</span>
+      </div>
+    </div>
+    <div class="sobre-copy">
+      <span class="eyebrow" data-reveal>Sobre a Laryssa</span>
+      <h2 class="section-title" data-reveal data-delay="1">Cuidado, técnica e <em>delicadeza</em></h2>
+      <p data-reveal data-delay="2">Sou a Laryssa, nail designer apaixonada por transformar mãos em pequenas obras de arte. Acredito que uma unha bem feita vai muito além da estética — é autoestima, é o seu momento de cuidado.</p>
+      <p data-reveal data-delay="2">No meu espaço em Osasco, trabalho com biossegurança rigorosa, materiais de primeira linha e muita atenção ao que cada cliente deseja. Aqui você não é mais uma: é única.</p>
+      <div class="values" data-reveal data-delay="3">
+        <span class="value-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9"/></svg>Biossegurança</span>
+        <span class="value-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z" stroke-linecap="round" stroke-linejoin="round"/></svg>Materiais premium</span>
+        <span class="value-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.3-9.3-8.7C1.3 9.5 2.6 6 6 6c2 0 3.3 1.2 4 2.3C10.7 7.2 12 6 14 6c3.4 0 4.7 3.5 3.3 6.3C19 16.7 12 21 12 21z" stroke-linecap="round" stroke-linejoin="round"/></svg>Atendimento humano</span>
+      </div>
+      <p class="sign" data-reveal data-delay="3">Laryssa</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVIÇOS ===== -->
+<section class="servicos section-pad" id="servicos">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow center" data-reveal>Serviços &amp; cuidados</span>
+      <h2 class="section-title" data-reveal data-delay="1">O que posso fazer <em>por você</em></h2>
+    </div>
+    <div class="serv-grid">
+      <div class="serv-item" data-reveal>
+        <div class="si-main"><h3>Alongamento em Gel</h3><p>Estrutura, resistência e o formato que você sempre quis.</p></div>
+      </div>
+      <div class="serv-item" data-reveal data-delay="1">
+        <div class="si-main"><h3>Banho de Gel</h3><p>Fortalecimento da unha natural com brilho de longa duração.</p></div>
+      </div>
+      <div class="serv-item" data-reveal>
+        <div class="si-main"><h3>Esmaltação em Gel</h3><p>Cor impecável que dura semanas, sem lascar.</p></div>
+      </div>
+      <div class="serv-item" data-reveal data-delay="1">
+        <div class="si-main"><h3>Manutenção</h3><p>Para manter o seu alongamento sempre perfeito.</p></div>
+      </div>
+      <div class="serv-item" data-reveal>
+        <div class="si-main"><h3>Decoração &amp; Nail Art</h3><p>Francesinhas, chrome, fios dourados e muito mais.</p></div>
+      </div>
+      <div class="serv-item" data-reveal data-delay="1">
+        <div class="si-main"><h3>Spa dos Pés</h3><p>Hidratação, esfoliação e esmaltação para relaxar de verdade.</p></div>
+      </div>
+    </div>
+    <div class="serv-cta" data-reveal>
+      <p>Cada mão é única — o valor é combinado conforme o serviço e a decoração escolhida.</p>
+      <a class="btn btn-gold" href="https://wa.me/553899768680?text=Ol%C3%A1%20Laryssa!%20Gostaria%20de%20um%20or%C3%A7amento%20e%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.519 5.26l-.999 3.648 3.97-.607zm5.422-6.962c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        Pedir orçamento e agendar
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERIA ===== -->
+<section class="galeria section-pad" id="galeria">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow center" data-reveal>Galeria</span>
+      <h2 class="section-title" data-reveal data-delay="1">Trabalhos que <em>falam</em> por si</h2>
+      <p class="lead" data-reveal data-delay="2" style="text-align:center; margin:0 auto;">Uma seleção dos meus trabalhos favoritos — do clássico ao statement.</p>
+    </div>
+    <div class="gal-grid" id="galGrid">
+      <div class="gal-cell" data-reveal><img src="assets/nail-francesa-gold.png" alt="Francesa com fio dourado" style="object-position: 50% 64%;"><span class="cap">Francesa · fio dourado</span></div>
+      <div class="gal-cell" data-reveal data-delay="1"><img src="assets/nail-chrome.png" alt="Chrome rosé perolado" style="object-position: 50% 78%;"><span class="cap">Chrome rosé</span></div>
+      <div class="gal-cell" data-reveal data-delay="2"><img src="assets/nail-vinho.png" alt="Esmaltação vinho clássico" style="object-position: 50% 48%;"><span class="cap">Vinho clássico</span></div>
+      <div class="gal-cell" data-reveal data-delay="3"><img src="assets/nail-perola.png" alt="Nude perolado" style="object-position: 50% 52%;"><span class="cap">Nude perolado</span></div>
+      <div class="gal-cell" data-reveal><img src="assets/nail-mocha.png" alt="Mocha cremoso" style="object-position: 50% 64%;"><span class="cap">Mocha cremoso</span></div>
+      <div class="gal-cell" data-reveal data-delay="1"><img src="assets/nail-preto.png" alt="Preto espelhado" style="object-position: 50% 70%;"><span class="cap">Preto espelhado</span></div>
+      <div class="gal-cell" data-reveal data-delay="2"><img src="assets/espaco.png" alt="O espaço Laryssa Nail Spa" style="object-position: 50% 42%;"><span class="cap">Nosso espaço</span></div>
+      <div class="gal-cell" data-reveal data-delay="3"><img src="assets/laryssa-esmalte.png" alt="Laryssa Nail Spa" style="object-position: 50% 28%;"><span class="cap">Atendimento Laryssa</span></div>
+    </div>
+    <div style="text-align:center; margin-top:48px;" data-reveal>
+      <a class="btn btn-ghost-light" href="https://instagram.com/laryssa.nailspa" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Ver mais no Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEPOIMENTOS ===== -->
+<section class="depo section-pad" id="depoimentos">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow center" data-reveal>Depoimentos</span>
+      <h2 class="section-title" data-reveal data-delay="1">O carinho de quem <em>já passou</em> por aqui</h2>
+    </div>
+    <div class="depo-grid">
+      <div class="depo-card" data-reveal>
+        <div class="quote-mark">”</div>
+        <div class="stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg></div>
+        <p>Minhas unhas nunca duraram tanto! A Laryssa é caprichosa demais, o ambiente é impecável e ela acerta exatamente o que eu imagino.</p>
+        <div class="who"><span class="av">A</span><div><b>Amanda R.</b><span>Cliente desde 2023</span></div></div>
+      </div>
+      <div class="depo-card" data-reveal data-delay="1">
+        <div class="quote-mark">”</div>
+        <div class="stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg></div>
+        <p>Atendimento maravilhoso, do começo ao fim. Saio sempre me sentindo mais bonita e cuidada. Virei cliente fiel!</p>
+        <div class="who"><span class="av">B</span><div><b>Beatriz M.</b><span>Osasco</span></div></div>
+      </div>
+      <div class="depo-card" data-reveal data-delay="2">
+        <div class="quote-mark">”</div>
+        <div class="stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg></div>
+        <p>Profissional nota mil! Higiene impecável, pontual e com um olhar artístico que faz toda a diferença. Recomendo de olhos fechados.</p>
+        <div class="who"><span class="av">C</span><div><b>Carla S.</b><span>Cliente desde 2022</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REELS / VÍDEOS ===== -->
+<section class="reels section-pad" id="reels">
+  <div class="reels-smoke" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow center" data-reveal>Em movimento</span>
+      <h2 class="section-title" data-reveal data-delay="1">Veja a <em>magia</em> acontecer</h2>
+      <p class="lead" data-reveal data-delay="2" style="text-align:center; margin:0 auto;">Um pouquinho do processo e do resultado — direto da bancada.</p>
+    </div>
+    <div class="reels-grid">
+      <figure class="reel" data-reveal>
+        <video class="reel-video" autoplay muted loop playsinline preload="auto" poster="assets/nail-chrome.png"><source src="videos/reel-1.mp4" type="video/mp4"></video>
+      </figure>
+      <figure class="reel" data-reveal data-delay="1">
+        <video class="reel-video" autoplay muted loop playsinline preload="auto" poster="assets/nail-francesa-gold.png"><source src="videos/reel-2.mp4" type="video/mp4"></video>
+      </figure>
+      <figure class="reel" data-reveal data-delay="2">
+        <video class="reel-video" autoplay muted loop playsinline preload="auto" poster="assets/nail-vinho.png"><source src="videos/reel-3.mp4" type="video/mp4"></video>
+      </figure>
+      <figure class="reel" data-reveal data-delay="3">
+        <video class="reel-video" autoplay muted loop playsinline preload="auto" poster="assets/nail-perola.png"><source src="videos/reel-4.mp4" type="video/mp4"></video>
+      </figure>
+      <figure class="reel" data-reveal data-delay="4">
+        <video class="reel-video" autoplay muted loop playsinline preload="auto" poster="assets/nail-mocha.png"><source src="videos/reel-5.mp4" type="video/mp4"></video>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCALIZAÇÃO + CONTATO ===== -->
+<section class="local section-pad" id="contato">
+  <div class="wrap local-grid">
+    <div class="local-info">
+      <span class="eyebrow" data-reveal>Onde me encontrar</span>
+      <h2 data-reveal data-delay="1">Seu momento de cuidado em <em>Osasco</em></h2>
+      <p data-reveal data-delay="2">Atendimento com hora marcada, em um espaço reservado e tranquilo. Agende pelo WhatsApp e garanta o seu horário.</p>
+      <div class="info-list">
+        <div class="info-row" data-reveal>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span class="tx"><b>Osasco · São Paulo</b><span>Endereço enviado na confirmação do agendamento</span></span>
+        </div>
+        <div class="info-row" data-reveal data-delay="1">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.519 5.26l-.999 3.648 3.97-.607zm5.422-6.962c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></span>
+          <span class="tx"><b>WhatsApp</b><span><a href="https://wa.me/553899768680?text=Ol%C3%A1%20Laryssa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">+55 38 9976-8680</a></span></span>
+        </div>
+        <div class="info-row" data-reveal data-delay="2">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+          <span class="tx"><b>Instagram</b><span><a href="https://instagram.com/laryssa.nailspa" target="_blank" rel="noopener">@laryssa.nailspa</a></span></span>
+        </div>
+      </div>
+      <div class="local-cta" data-reveal>
+        <a class="btn btn-gold" href="https://wa.me/553899768680?text=Ol%C3%A1%20Laryssa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.519 5.26l-.999 3.648 3.97-.607zm5.422-6.962c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Agendar agora
+        </a>
+        <a class="btn btn-ghost-light" href="https://instagram.com/laryssa.nailspa" target="_blank" rel="noopener">Seguir no Instagram</a>
+      </div>
+    </div>
+
+    <div class="local-card" data-reveal data-delay="1">
+      <svg class="filigree" style="top:18px; right:18px; transform:rotate(90deg);" viewBox="0 0 180 180" aria-hidden="true"><path d="M2 60 C2 26 26 2 60 2 M2 60 C2 90 30 100 60 100 M30 60 C30 44 44 30 60 30"/></svg>
+      <span class="lc-eyebrow">Horário de atendimento</span>
+      <h3 class="serif">Agende seu <em>horário</em></h3>
+      <div class="hours">
+        <div class="hr"><span>Segunda</span><span>09h — 19h</span></div>
+        <div class="hr"><span>Terça a Sexta</span><span>09h — 20h</span></div>
+        <div class="hr"><span>Sábado</span><span>09h — 17h</span></div>
+        <div class="hr closed"><span>Domingo</span><span>Fechado</span></div>
+      </div>
+      <a class="btn btn-gold" href="https://wa.me/553899768680?text=Ol%C3%A1%20Laryssa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.519 5.26l-.999 3.648 3.97-.607zm5.422-6.962c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="brand-mark" href="#inicio">
+          <span class="brand-mono">L</span>
+          <span class="brand-name"><b>Laryssa</b><span>Nail Spa · Osasco</span></span>
+        </a>
+        <p class="foot-tag">Nail design com técnica, higiene e carinho. Suas unhas merecem esse cuidado.</p>
+        <div class="foot-social">
+          <a href="https://instagram.com/laryssa.nailspa" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://wa.me/553899768680" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.519 5.26l-.999 3.648 3.97-.607zm5.422-6.962c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Navegação</h4>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#depoimentos">Depoimentos</a>
+        </div>
+        <div class="foot-col">
+          <h4>Contato</h4>
+          <a href="https://wa.me/553899768680" target="_blank" rel="noopener">+55 38 9976-8680</a>
+          <a href="https://instagram.com/laryssa.nailspa" target="_blank" rel="noopener">@laryssa.nailspa</a>
+          <p>Osasco · São Paulo</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Laryssa Nail Spa. Todos os direitos reservados.</span>
+      <span>Feito com carinho 🤍</span>
+    </div>
+  </div>
+</footer>
+
+<!-- floating whatsapp -->
+<a class="wa-float" href="https://wa.me/553899768680?text=Ol%C3%A1%20Laryssa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.519 5.26l-.999 3.648 3.97-.607zm5.422-6.962c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<div id="tweaks-root"></div>
+
+<script>
+  // nav scroll state
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if (window.scrollY > 40) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // scroll reveal — getBoundingClientRect based, plays a one-shot entrance.
+  // The animation class is stripped after it finishes, so the resting state is
+  // always opacity:1 even if the animation clock never advances (sandbox-safe).
+  const revealEls = Array.from(document.querySelectorAll('[data-reveal]'));
+  let ticking = false;
+  function play(el) {
+    el.classList.add('reveal-play');
+    setTimeout(function () { el.classList.remove('reveal-play'); }, 1500);
+  }
+  function reveal() {
+    ticking = false;
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    for (let i = revealEls.length - 1; i >= 0; i--) {
+      const el = revealEls[i];
+      const r = el.getBoundingClientRect();
+      if (r.top < vh * 0.92 && r.bottom > 0) {
+        play(el);
+        revealEls.splice(i, 1);
+      }
+    }
+  }
+  function requestReveal() {
+    if (!ticking) { ticking = true; requestAnimationFrame(reveal); }
+  }
+  reveal();
+  window.addEventListener('scroll', requestReveal, { passive: true });
+  window.addEventListener('resize', requestReveal, { passive: true });
+  window.addEventListener('load', reveal);
+
+  // ensure all reel videos autoplay (muted) reliably & keep them looping
+  function playReels() {
+    document.querySelectorAll('.reel-video').forEach(function (v) {
+      v.muted = true;
+      const p = v.play();
+      if (p && p.catch) p.catch(function () {});
+    });
+  }
+  document.querySelectorAll('.reel-video').forEach(function (v) {
+    v.muted = true;
+    ['loadeddata', 'canplay', 'stalled', 'pause'].forEach(function (ev) {
+      v.addEventListener(ev, function () {
+        if (v.paused) { const p = v.play(); if (p && p.catch) p.catch(function () {}); }
+      });
+    });
+  });
+  playReels();
+  window.addEventListener('load', playReels);
+  // safety: resume any stalled reel every few seconds
+  setInterval(function () {
+    document.querySelectorAll('.reel-video').forEach(function (v) {
+      if (v.paused) { v.muted = true; const p = v.play(); if (p && p.catch) p.catch(function () {}); }
+    });
+  }, 4000);
+</script>
+
+<!-- Mobile nav JS -->
+<script>
+(function(){
+  var burger = document.getElementById('navBurger');
+  var menu = document.getElementById('mobileNav');
+  function close(){ menu.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded','false'); menu.setAttribute('aria-hidden','true'); }
+  burger.addEventListener('click', function(){
+    var isOpen = menu.classList.toggle('open');
+    burger.classList.toggle('open', isOpen);
+    burger.setAttribute('aria-expanded', isOpen);
+    menu.setAttribute('aria-hidden', !isOpen);
+  });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', close); });
+})();
+</script>
+
+<!-- React + Babel for the Tweaks panel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks-app.jsx"></script>
+
+</body>
+</html>
